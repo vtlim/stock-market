@@ -24,12 +24,12 @@ Version: 2018 Feb 23
    * Volume - amount traded that day
    * OpenInt - open interest (total number of trades that have not yet been liquidated) [see Investopedia][4]
 * A representative text file is structured as comma-separated values in this order:
-   |Date      |Open  |High  |Low   |Close |Volume|OpenInt|
-   |----------|------|------|------|------|------|-------|
-   |2011-02-01|24.092|24.226|24.092|24.226|827   |0      |
-   |2011-02-02|23.934|23.934|23.759|23.759|827   |0      |
-   |2011-02-04|23.739|23.739|23.724|23.724|22177 |0      |
-   |2011-02-08|24.064|24.074|24.064|24.074|1886  |0      |
+|Date      |Open  |High  |Low   |Close |Volume|OpenInt|
+|----------|------|------|------|------|------|-------|
+|2011-02-01|24.092|24.226|24.092|24.226|827   |0      |
+|2011-02-02|23.934|23.934|23.759|23.759|827   |0      |
+|2011-02-04|23.739|23.739|23.724|23.724|22177 |0      |
+|2011-02-08|24.064|24.074|24.064|24.074|1886  |0      |
 
 * Numerical details on the data set:
    * 8539 total entries
