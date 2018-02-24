@@ -1,0 +1,9 @@
+
+# R configuration files
+.RData
+.Rhistory
+
+# Data sets
+price-volume-data-for-all-us-stocks-etfs.zip
+ETFs/
+Stocks/
