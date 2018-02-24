@@ -24,6 +24,7 @@ Version: 2018 Feb 23
    * Volume - amount traded that day
    * OpenInt - open interest (total number of trades that have not yet been liquidated) [see Investopedia][4]
 * A representative text file is structured as comma-separated values in this order:
+
 |Date      |Open  |High  |Low   |Close |Volume|OpenInt|
 |----------|------|------|------|------|------|-------|
 |2011-02-01|24.092|24.226|24.092|24.226|827   |0      |
