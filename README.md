@@ -1,17 +1,16 @@
 # Stock Market Exploratory Analysis
 Version: 2018 Feb 23
 
-https://medium.com/mlreview/a-simple-deep-learning-model-for-stock-price-prediction-using-tensorflow-30505541d877
-
 ## Resources
-* Introductory R material: `intro.R` and related data sets from UCI course on [Introduction to Data Science][1]
-* Stock market data set from [Kaggle][2]
+* Introductory R material: `intro.R` and related data sets from [UCI data science course][1]
+* [Stock market data set from Kaggle][2]
 * [R reference sheet][3]
 * [R forecast documentation][6]
 
 ## Contents
 * `data_files`
 * `intro.R` - Simple, commented script on getting acquainted with R.
+* `work.R` - Analysis work.
 
 ## Details on stock market data set
 * There are two categories of data: exchange-traded funds (ETFs) and stocks.
@@ -25,21 +24,19 @@ https://medium.com/mlreview/a-simple-deep-learning-model-for-stock-price-predict
    * Volume - amount traded that day
    * OpenInt - open interest (total number of trades that have not yet been liquidated) [see Investopedia][4]
 * A representative text file is structured as comma-separated values in this order:
+   |Date      |Open  |High  |Low   |Close |Volume|OpenInt|
+   |----------|------|------|------|------|------|-------|
+   |2011-02-01|24.092|24.226|24.092|24.226|827   |0      |
+   |2011-02-02|23.934|23.934|23.759|23.759|827   |0      |
+   |2011-02-04|23.739|23.739|23.724|23.724|22177 |0      |
+   |2011-02-08|24.064|24.074|24.064|24.074|1886  |0      |
 
-|Date      |Open  |High  |Low   |Close |Volume|OpenInt|
-|----------|------|------|------|------|------|-------|
-|2011-02-01|24.092|24.226|24.092|24.226|827   |0      |
-|2011-02-02|23.934|23.934|23.759|23.759|827   |0      |
-|2011-02-04|23.739|23.739|23.724|23.724|22177 |0      |
-|2011-02-08|24.064|24.074|24.064|24.074|1886  |0      |
-
-
-Numerical details on this data set:
-* 8539 total entries
-* 1344 ETFs
-* 7195 stocks
-* Dates range from: XXXX to 2017-11-10.
-* XXX-XXX lines per text file
+* Numerical details on the data set:
+   * 8539 total entries
+   * 1344 ETFs
+   * 7195 stocks
+   * Dates range from: XXXX to 2017-11-10.
+   * XXX-XXX lines per text file
 
 
 
@@ -52,7 +49,7 @@ Numerical details on this data set:
 *  What day and stock had the highest high-minus-low difference? (is there related news coverage)
 * What is the correlation time in the market? A few days? A couple of weeks?
 
-Other interesting things:
+### Other interesting things:
 * [Quantifying correlation between financial news and stocks][5]
 
 
