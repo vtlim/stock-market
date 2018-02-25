@@ -9,6 +9,9 @@ Version: 2018 Feb 23
 
 ## Contents
 * `data_files`
+   * CSV files are for `intro.R` work
+   * Three .txt files from ETF data (aadr, aaxj, acim)
+   * Three .txt files from Stock data (nvda, nvec, nvee)
 * `intro.R` - Simple, commented script on getting acquainted with R.
 * `work.R` - Analysis work.
 
@@ -61,4 +64,22 @@ Version: 2018 Feb 23
 [5]: http://ieeexplore.ieee.org/document/7850021/?reload=true
 [6]: https://cran.r-project.org/web/packages/forecast/forecast.pdf
 
+## Installation notes (R, RStudio Server for Ubuntu over SSH)
+Although I have R and RStudio set up on my own computer, I wanted to be able to run RStudio  
+on my remote Linux server, which has a lot more computing power.
 
+1. On remote server: [install R][7]
+    * Note: This gave me an older version, 3.0 something, so I updated it after.
+2. On remote server: [install RStudio Server][8]
+3. Configure to work over SSH
+    * Login to the remote server and start RStudio Server: `rstudio-server start`  
+      You might not have to do this. Mine was already active, even after reboot.
+    * From local server:  
+      `ssh -f <username>@<server> -L :8787:127.0.0.1:8787 -N`  
+      (Thank you [StackExchange][9]!)
+    * Open an Internet browser and type in "http://127.0.0.1:8787/"
+    * Log in with the your username/password for the remote server.
+
+[7]: https://alstatr.blogspot.com/2013/03/download-and-install-r-in-ubuntu.html
+[8]: https://www.rstudio.com/products/rstudio/download-server/
+[9]: https://serverfault.com/questions/489192/ssh-tunnel-refusing-connections-with-channel-2-open-failed
