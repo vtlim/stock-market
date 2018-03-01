@@ -55,6 +55,7 @@ names(d1_short)[2]<-d1[1, "Symbol"]
 names(d2_short)[2]<- d2[1, "Symbol"]
 # combine dataframes by date
 d12 <- merge(d1_short, d2_short, by="Date", all=T)
+
 # reshape dataframe for plotting
 d12_plot <- melt(d12, id.vars="Date")
 # generate plot
@@ -101,6 +102,7 @@ str(dmany)
 str(dmany)
 head(dmany)
 tail(dmany)
+
 # generate plot
 ggplot(dmany, aes(Date, Open, col=Symbol)) + 
   geom_line() + 
@@ -117,3 +119,22 @@ ggplot(dmany2, aes(Date, Open)) +
   stat_smooth() +
   ylab("dollars per share (open)") +
   guides(color=guide_legend("Stock"))
+
+
+### figure out why range is so large, > 30M
+# rough view of data in histogram plot
+hist(dmany2$Open)
+# find the row of the max
+dmany2[which.max(dmany2$Open),]
+
+# generate sequence in which to bin the data
+br = seq(0,40000000,by=5000000)
+# create the labels for the ranges
+ranges = paste(head(br,-1), br[-1], sep=" - ")
+# bin the data using the hist function
+freq   = hist(dmany2$Open, breaks=br, include.lowest=TRUE, plot=FALSE)
+# convert the binned data to a dataframe
+data.frame(range = ranges, frequency = freq$counts)
+
+# TODO filter the set to only include share prices below some cutoff
+dmany3 <- dmany2[!dmany2$Symbol == "uvxy", ]

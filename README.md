@@ -54,6 +54,8 @@ Version: 2018 Feb 23
 * What is the correlation time in the market? A few days? A couple of weeks?
 
 ### Other interesting things:
+* Candle charts
+* LSTM networks
 * [Quantifying correlation between financial news and stocks][5]
 
 
@@ -78,7 +80,7 @@ on my remote Linux server, which has a lot more computing power.
       `ssh -f <username>@<server> -L :8787:127.0.0.1:8787 -N`  
       (Thank you [StackExchange][9]!)
     * Open an Internet browser and type in "http://127.0.0.1:8787/"
-    * Log in with the your username/password for the remote server.
+    * Log in with your username/password for the remote server.
 
 [7]: https://alstatr.blogspot.com/2013/03/download-and-install-r-in-ubuntu.html
 [8]: https://www.rstudio.com/products/rstudio/download-server/
