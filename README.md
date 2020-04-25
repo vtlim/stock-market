@@ -53,6 +53,11 @@ Version: 2018 Feb 23
 *  What day and stock had the highest high-minus-low difference? (is there related news coverage)
 * What is the correlation time in the market? A few days? A couple of weeks?
 
+## Potential avenues to explore
+* [Time Series Forecasting with Recurrent Neural Networks][7]
+* [A Guide For Time Series Prediction Using Recurrent Neural Networks (LSTMs)][8]
+* [How to apply Neural Network to time series forecasting?][9]
+
 ### Other interesting things:
 * Candle charts
 * LSTM networks
@@ -65,6 +70,9 @@ Version: 2018 Feb 23
 [4]: https://www.investopedia.com/terms/o/openinterest.asp
 [5]: http://ieeexplore.ieee.org/document/7850021/?reload=true
 [6]: https://cran.r-project.org/web/packages/forecast/forecast.pdf
+[7]: https://tensorflow.rstudio.com/blog/time-series-forecasting-with-recurrent-neural-networks.html
+[8]: https://blog.statsbot.co/time-series-prediction-using-recurrent-neural-networks-lstms-807fa6ca7f
+[9]: https://stats.stackexchange.com/questions/10162/how-to-apply-neural-network-to-time-series-forecasting
 
 ## Installation notes (R, RStudio Server for Ubuntu over SSH)
 Although I have R and RStudio set up on my own computer, I wanted to be able to run RStudio  
